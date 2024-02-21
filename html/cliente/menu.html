@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>HazTuPedido</title>
+
+        <!-- links externos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <!-- links locales -->
+        <link rel="stylesheet" href="../../css/styleIndex.css">
+        <link rel="stylesheet" href="../../css/styleMenu.css">
+    </head>
+
+    <body><!-- cuerpo de la pagina -->
+
+        <!-- inicio de cabecera -->
+        <header>
+
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>  SaborMelody</a>
+
+            <nav class="navbar">
+                <a href="../index.html#home">Inicio</a>
+                <a href="../">Platillos Estrella</a>
+                <a class="active" href="#menu">Menú</a>
+                <a href="../index.html#about">¿Quiénes somos?</a>
+                <a href="../index.html#opinion">Opiniones</a>
+                <a href="#login">Inicia sección</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+        </header>
+        <!-- fin de cabecera -->
+
+
+        <!-- fomulario de la barra de busqueda -->
+        <form action="" id="search-form">
+
+            <input type="search" placeholder="search here..." name="" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+            <i class="fas fa-times" id="close"></i>
+
+        </form>
+
+
+        <!-- inicio del menu -->
+        <section class="menu" id="menu">
+
+            <h3 class="sub-heading"> Nuestro menú </h3>
+            <h1 class="heading"> Especialidades de hoy </h1>
+
+            <div class="box-container">
+
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/arrozConPollo_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Arroz con Pollo</h3>
+                            <span class="price">$530,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/arrozFrito_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Arroz Frito</h3>
+                            <span class="price">$400,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/grochetasCarne__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Grochetas de Carne</h3>
+                            <span class="price">$250,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/hamburquesa_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Hamburguesa</h3>
+                            <span class="price">$400,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/grochetas_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Grochetas Vegetalianas</h3>
+                            <span class="price">$150,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/hamburguesaDobleQueso__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Hamburguesa Doble Queso</h3>
+                            <span class="price">$420,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/hamburguesaPapitas__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Hamburguesa con Papitas Fritas</h3>
+                            <span class="price">$660,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/espaguetiAlbondigas__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Espagueti con Albondigas</h3>
+                            <span class="price">$730,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/hamburguesasuper__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Super Hamburguesa</h3>
+                            <span class="price">$590,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/batidoHelado_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Batido de Helado</h3>
+                            <span class="price">$450,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/jugoGuayaba__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Jugo de Guayaba</h3>
+                            <span class="price">$160,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/jugoMango__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Jugo de Mango</h3>
+                            <span class="price">$160,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/jugoMelon__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Jugo de Melón</h3>
+                            <span class="price">$160,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/jugoPlatanito__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Jugo de Platanito</h3>
+                            <span class="price">$160,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/jugoUva__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Jugo de Uva</h3>
+                            <span class="price">$160,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/macarrones_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Macarrones</h3>
+                            <span class="price">$580,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/ensaladaFria__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Ensalada Fría</h3>
+                            <span class="price">$270,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/espaguetiCarne__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Espageti con Carne</h3>
+                            <span class="price">$650,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pizzaCebolla_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pizza de Cebolla</h3>
+                            <span class="price">430,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pizzaHawaiana_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pizza Hawaiana</h3>
+                            <span class="price">$520,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/espaguetiNapolitano__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Espagueti Napolitano</h3>
+                            <span class="price">$500,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/espaguetiSalchicha__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Espageti con Salchicha</h3>
+                            <span class="price">580,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/macarronesQueso__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Macarrones con Queso</h3>
+                            <span class="price">500,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/macarronoesSalchicha__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Macarrones con Salchicha</h3>
+                            <span class="price">$580,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pastichio__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pastichio</h3>
+                            <span class="price">$780,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pizzapicante_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pizza Picante</h3>
+                            <span class="price">630,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pizzaNapolitana__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pizza Napolitana</h3>
+                            <span class="price">$390,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pizzaSalchicha__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pizza con Salchicha</h3>
+                            <span class="price">460,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/polloAsado__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pollo Asado</h3>
+                            <span class="price">$860,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/polloFrito__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Pollo Frito</h3>
+                            <span class="price">680,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/sandwichRobusto__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Ssandwich Robusto</h3>
+                            <span class="price">$250,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/sandwishNormal__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Sandwish Normal</h3>
+                            <span class="price">230,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/curry_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Curry</h3>
+                            <span class="price">$720,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/salmon_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Salmon</h3>
+                            <span class="price">250,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/tofu_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Tofu</h3>
+                            <span class="price">300,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div> 
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pinnaColada__250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Piña Colada</h3>
+                            <span class="price">$400,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="../../img/productos/pinnaColadaAlcohol_250px.jpg" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h3>Piña Colada con Alcohol</h3>
+                            <span class="price">450,00</span>
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>          
+    
+                </div>
+
+            </div>
+
+        </section>
+        <!-- fin de la seccion del menu -->
+
+
+        <!-- scripts externos -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- scripts locales -->
+        <script src="../../js/scriptIndex.js"></script>
+
+    </body>
+
+    <footer> <!-- pie de la pagina -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="credit">
+                    copyright @ 2024 by Eliane Alvarez, Elizabeth Rodríguez y Luis E. Castillo
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+</html>
