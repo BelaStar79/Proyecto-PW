@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
         <!-- links locales -->
-        <link rel="stylesheet" href="../css/styleIndex.css">
+        <link rel="stylesheet" href="./css/styleIndex.css">
     </head>
 
     <body><!-- cuerpo de la pagina -->
@@ -25,10 +25,10 @@
             <nav class="navbar">
                 <a class="" href="#home">Inicio</a>
                 <a href="#dishes">Platillos Estrella</a>
-                <a href="./cliente/menu.html">Menú</a>
+                <a href="./html/cliente/menu.html">Menú</a>
                 <a href="#about">¿Quiénes somos?</a>
                 <a href="#opinion">Opiniones</a>
-                <a href="#login">Inicia sección</a>
+                <a href="./html/login_and_register.html" class="btn-open-popup">Inicia sección</a>
             </nav>
 
             <div class="icons">
@@ -63,10 +63,10 @@
                             <span>Plato estrella</span>
                             <h3>Macarrones</h3>
                             <p>Pasta deliciosa, versátil, nutritiva y económica. ¡Pruébalos ya!</p>
-                            <a href="#" class="btn">Ordenar ahora</a>
+                            <a href="" class="btn">Ordenar ahora</a>
                         </div>
                         <div class="image">
-                            <img src="../img/producto_home/macarrones__u_my2mezwn9z__Pixabay__500px.png" alt="Imagen de @u_my2mezwn9z en Pixabay">
+                            <img src="./img/producto_home/macarrones__u_my2mezwn9z__Pixabay__500px.png" alt="Imagen de @u_my2mezwn9z en Pixabay">
                         </div>
                     </div>
 
@@ -75,10 +75,10 @@
                             <span>Plato estrella</span>
                             <h3>Sushi</h3>
                             <p>Delicioso y fresco preparado con maestría, una explosión de saboes exquisitos. ¡Ven a probarlo!</p>
-                            <a href="#" class="btn">Ordenar ahora</a>
+                            <a href="" class="btn">Ordenar ahora</a>
                         </div>
                         <div class="image">
-                            <img src="../img/producto_home/sushi__ia__500px.png" alt="Imagen creada por la IA Bing">
+                            <img src="./img/producto_home/sushi__ia__500px.png" alt="Imagen creada por la IA Bing">
                         </div>
                     </div>
 
@@ -87,10 +87,10 @@
                             <span>Plato estrella</span>
                             <h3>Pizza</h3>
                             <p>Recien horneada con ingredientes frescos y sabrosos, lista para conquistar tu paladar. ¡Disfruta!</p>
-                            <a href="#" class="btn">Ordenar ahora</a>
+                            <a href="" class="btn">Ordenar ahora</a>
                         </div>
                         <div class="image">
-                            <img src="../img/producto_home/pizza__ia__500px.png" alt="Imagen creada por la IA Musavir">
+                            <img src="./img/producto_home/pizza__ia__500px.png" alt="Imagen creada por la IA Musavir">
                         </div>
                     </div>
 
@@ -258,7 +258,7 @@
 
             <div class="row">
                 <div class="image">
-                    <img src="../img/about/chefsEnCocina__ai-generated-8520992_1280__Pixabay_300px.jpg" alt="">
+                    <img src="./img/about/chefsEnCocina__ai-generated-8520992_1280__Pixabay_300px.jpg" alt="">
                 </div>
 
                 <div class="content">
@@ -278,7 +278,7 @@
                             <span>Servicio 24/7</span>
                         </div>
                     </div>
-                    <a href="./cliente/about.html" class="btn">Leer más</a>
+                    <a href="./html/cliente/about.html" class="btn">Leer más</a>
                 </div>
             </div>
 
@@ -440,20 +440,20 @@
                 <div class="mapa">
                     <h3>Ven a nuestro local</h3>
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d892.1149448875849!2d-82.46202034960078!3d22.986164954141323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd6fadbdb85821%3A0xccecf1c6c9af03f2!2sEdificio%20105!5e0!3m2!1ses-419!2scu!4v1708797356707!5m2!1ses-419!2scu">
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9819493578434!2d-82.47056962984671!3d22.987691242350227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd6f3549194015%3A0x3317d4fb67f5722!2sDocente%204%20Camilo%20Cienfuegos%20(Facultad%20de%20Ciencias%20y%20Tecnolog%C3%ADas%20Computacionales)!5e0!3m2!1ses-419!2scu!4v1708804384894!5m2!1ses-419!2scu">
                         <!-- este es el mapa -->
                     </iframe> 
                 </div>
     
-                <form action="" autocomplete="off">
-                    <h3>Dejanos tu opinion</h3>
+                <form action="" autocomplete="off" onsubmit="return validarFormulario()">
+                    <h3>Dejanos saber tu opinión</h3>
                     <input type="text" name="nombre" placeholder="Nombre o sedónimo" class="campo">
                     <input type="email" name="correo" placeholder="Correo electrónico" class="campo">
                     <textarea name="mensaje" placeholder="Agredeceríamos tus palabras"></textarea>
                     <input type="submit" value="Enviar mensaje" name="eniar" class="btn-enviar btn">
                 </form>
     
-            </div>`
+            </div>
             
         </div>
         <!-- fin de la seccion del contacto -->
@@ -463,7 +463,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <!-- scripts locales -->
-        <script src="../js/scriptIndex.js"></script>
+        <script src="./js/scriptIndex.js"></script>
 
     </body>
 
@@ -475,11 +475,11 @@
 
                 <div class="box">
                     <h3>Sucursales</h3>
-                    <a href="#">Pinar del Rio</a>
-                    <a href="#">Camagüey</a>
-                    <a href="#">Las Tunas</a>
-                    <a href="#">Granma</a>
-                    <a href="#">Guantánamo</a>
+                    <a href="">Pinar del Rio</a>
+                    <a href="">Camagüey</a>
+                    <a href="">Las Tunas</a>
+                    <a href="">Granma</a>
+                    <a href="">Guantánamo</a>
                 </div>
 
                 <div class="box">
@@ -493,22 +493,22 @@
 
                 <div class="box">
                     <h3>Contactanos</h3>
-                    <a href="#">+53 1234568</a>
-                    <a href="#">+53 87654321</a>
-                    <a href="#">sabormelody@gmail.com</a>
-                    <a href="#">haztupedido@gmail.com</a>
+                    <a href="">+53 1234568</a>
+                    <a href="">+53 87654321</a>
+                    <a href="">sabormelody@gmail.com</a>
+                    <a href="">haztupedido@gmail.com</a>
                 </div>
 
                 <div class="box">
                     <h3>Siguenos</h3>
-                    <a href="#">facebook</a>
-                    <a href="#">twitter</a>
-                    <a href="#">instagram</a>
-                    <a href="#">linkedin</a>
+                    <a href="">facebook</a>
+                    <a href="">twitter</a>
+                    <a href="">instagram</a>
+                    <a href="">linkedin</a>
                 </div>
             </div>
             <div class="credit">
-                copyright @ 2024 by Eliane Alvarez, Elizabeth Rodríguez y Luis E. Castillo
+                copyright &#169 2024 by Eliane Alvarez, Elizabeth Rodríguez y Luis E. Castillo
             </div>
 
         </section>

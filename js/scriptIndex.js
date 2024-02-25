@@ -90,3 +90,29 @@ var swiper = new Swiper(".opinion-slider", {
 });
 // fin de la configuracion del carrusel de opiniones
 
+
+// inicio de la validacion del formulario de contacto 
+function validarFormulario() {
+
+  var nombre = document.getElementsByName('nombre')[0].value;
+  var correo = document.getElementsByName('correo')[0].value;
+  var mensaje = document.getElementsByName('mensaje')[0].value;
+
+  if (nombre === '' || correo === '' || mensaje === '') {
+      alert('Por favor, completa todos los campos.');
+      return false; 
+  }
+
+  var correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!correoRegex.test(correo)) {
+      alert('Por favor, ingresa un correo electrónico válido.');
+      return false; 
+  }
+
+  return true;
+}
+// fin de la validacion del formulario de contacto 
+
+
+
