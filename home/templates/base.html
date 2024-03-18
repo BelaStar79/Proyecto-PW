@@ -1,0 +1,125 @@
+<!--
+Nota del backend:
+Este es la base que usarán todas las plantillas de la app. Incluye el header, footer y demás contenidos que son
+recurrentes en todas las páginas. Las restantes plantillas solamente deben incluir el contenido nuevo.
+-->
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>HazTuPedido</title>
+
+        <!-- links externos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <!-- links locales -->
+        <link rel="stylesheet" href="{% static 'css/styleIndex.css' %}">
+    </head>
+
+    <body><!-- cuerpo de la pagina -->
+
+        <!-- inicio de cabecera -->
+        <header>
+
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>  SaborMelody</a>
+
+            <nav class="navbar">
+                <a class="" href="#home">Inicio</a>
+                <a href="#dishes">Platillos Estrella</a>
+                <a href="./html/cliente/menu.html">Menú</a>
+                <a href="#about">¿Quiénes somos?</a>
+                <a href="#opinion">Opiniones</a>
+                <a href="./html/login_and_register.html" class="btn-open-popup">Inicia sección</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+        </header>
+        <!-- fin de cabecera -->
+
+
+        <!-- fomulario de la barra de busqueda -->
+        <form action="" id="search-form">
+
+            <input type="search" placeholder="search here..." name="" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+            <i class="fas fa-times" id="close"></i>
+
+        </form>
+
+
+        {% block content %}
+        {% endblock %}
+
+
+
+        <!-- scripts externos -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- scripts locales -->
+        <script src="{% static 'js/scriptIndex.js' %}"></script>
+
+    </body>
+
+    <footer> <!-- pie de la pagina -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Sucursales</h3>
+                    <a href="">Pinar del Rio</a>
+                    <a href="">Camagüey</a>
+                    <a href="">Las Tunas</a>
+                    <a href="">Granma</a>
+                    <a href="">Guantánamo</a>
+                </div>
+
+                <div class="box">
+                    <h3>Enlaces directos</h3>
+                    <a href="#home">Inicio</a>
+                    <a href="#dishes">Platillos Estrella</a>
+                    <a href="#about">¿Quiénes somos?</a>
+                    <a href="#opinion">Opiniones</a>
+                    <a href="#menu">Menú</a>
+                </div>
+
+                <div class="box">
+                    <h3>Contactanos</h3>
+                    <a href="">+53 1234568</a>
+                    <a href="">+53 87654321</a>
+                    <a href="">sabormelody@gmail.com</a>
+                    <a href="">haztupedido@gmail.com</a>
+                </div>
+
+                <div class="box">
+                    <h3>Siguenos</h3>
+                    <a href="">facebook</a>
+                    <a href="">twitter</a>
+                    <a href="">instagram</a>
+                    <a href="">linkedin</a>
+                </div>
+            </div>
+            <div class="credit">
+                copyright &#169 2024 by Eliane Alvarez, Elizabeth Rodríguez y Luis E. Castillo
+            </div>
+
+        </section>
+
+    </footer>
+
+</html>

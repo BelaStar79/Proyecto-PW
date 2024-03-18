@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
 /* importaciones locales */
-@import url('../css/variables.css');
+@import url('les.css');
 
 
 * {
