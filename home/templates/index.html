@@ -3,422 +3,460 @@
 
 {% block content %}
 
-        <!-- inicia la seccion home -->
-        <section class="home" id="home">
-            <div class="swiper home-slider">
+    <!-- inicia la seccion home -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
 
-                <div class="swiper-wrapper wrapper">
+            <div class="swiper-wrapper wrapper">
 
-                    <div class="swiper-slide slide">
-                        <div class="content">
-                            <span>Plato estrella</span>
-                            <h3>Macarrones</h3>
-                            <p>Pasta deliciosa, versátil, nutritiva y económica. ¡Pruébalos ya!</p>
-                            <a href="" class="btn">Ordenar ahora</a>
-                        </div>
-                        <div class="image">
-                            <img src="{% static 'img/producto_home/macarrones__u_my2mezwn9z__Pixabay__500px.png' %}" alt="Imagen de @u_my2mezwn9z en Pixabay">
-                        </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Plato estrella</span>
+                        <h3>Macarrones</h3>
+                        <p>Pasta deliciosa, versátil, nutritiva y económica. ¡Pruébalos ya!</p>
+                        <a href="" class="btn">Ordenar ahora</a>
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="content">
-                            <span>Plato estrella</span>
-                            <h3>Sushi</h3>
-                            <p>Delicioso y fresco preparado con maestría, una explosión de saboes exquisitos. ¡Ven a probarlo!</p>
-                            <a href="" class="btn">Ordenar ahora</a>
-                        </div>
-                        <div class="image">
-                            <img src="{% static 'img/producto_home/sushi__ia__500px.png' %}" alt="Imagen creada por la IA Bing">
-                        </div>
+                    <div class="image">
+                        <img src="{% static 'img/producto_home/macarrones__u_my2mezwn9z__Pixabay__500px.png' %}"
+                             alt="Imagen de @u_my2mezwn9z en Pixabay">
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="content">
-                            <span>Plato estrella</span>
-                            <h3>Pizza</h3>
-                            <p>Recien horneada con ingredientes frescos y sabrosos, lista para conquistar tu paladar. ¡Disfruta!</p>
-                            <a href="" class="btn">Ordenar ahora</a>
-                        </div>
-                        <div class="image">
-                            <img src="{% static 'img/producto_home/pizza__ia__500px.png' %}" alt="Imagen creada por la IA Musavir">
-                        </div>
-                    </div>
-
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Plato estrella</span>
+                        <h3>Sushi</h3>
+                        <p>Delicioso y fresco preparado con maestría, una explosión de saboes exquisitos. ¡Ven a
+                            probarlo!</p>
+                        <a href="" class="btn">Ordenar ahora</a>
+                    </div>
+                    <div class="image">
+                        <img src="{% static 'img/producto_home/sushi__ia__500px.png' %}"
+                             alt="Imagen creada por la IA Bing">
+                    </div>
+                </div>
 
-            </div>
-        </section>
-        <!-- termina la seccion home -->
-
-
-        <!-- inicia la seccion de platillos populares -->
-        <section class="dishes" id="dishes">
-
-            <h3 class="sub-heading"> Nuestros platos </h3>
-            <h1 class="heading">  Platos populares </h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/hamburguesasuper__250px.jpg' %}" alt="Foto de una Super Hamburquesa de Pixabay">
-                    <h3>Super Hamburguesa</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Plato estrella</span>
+                        <h3>Pizza</h3>
+                        <p>Recien horneada con ingredientes frescos y sabrosos, lista para conquistar tu paladar.
+                            ¡Disfruta!</p>
+                        <a href="" class="btn">Ordenar ahora</a>
                     </div>
-                    <span>$660,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
-                </div>
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/macarrones_250px.jpg' %}" alt="Foto de macarrones de Pixabay">
-                    <h3>Macarrones</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                    <div class="image">
+                        <img src="{% static 'img/producto_home/pizza__ia__500px.png' %}"
+                             alt="Imagen creada por la IA Musavir">
                     </div>
-                    <span>$580,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
-                </div>
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/curry_250px.jpg' %}" alt="Foto de un plato de curry de Pixabay">
-                    <h3>Curry</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <span>$720,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
-                </div>
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/pizzaHawaiana_250px.jpg' %}" alt="Foto de una pizza Hawaiana hecha por la IA Bing">
-                    <h3>Pizza Hawaiana</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <span>$520,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
-                </div>
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/hamburguesaPapitas__250px.jpg' %}" alt="Foto de una hamburguesa con papita de Pixabay">
-                    <h3>Hamburguesa con papitas</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <span>$590,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
-                </div>
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/espaguetiNapolitano__250px.jpg' %}" alt="Foto de un espagueti napolitano">
-                    <h3>Espagueti Napolitano</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <span>$500,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
-                </div>
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/pinnaColadaAlcohol_250px.jpg' %}" alt="Foto de una pinna colada de Pixabay">
-                    <h3>Piña Colada</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <span>$400,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
-                </div>
-                <div class="box">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    <img src="{% static 'img/productos/pizzaCebolla_250px.jpg' %}" alt="Foto de una pizza de cebolla de Pixabay">
-                    <h3>Pizza de Cebolla</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <span>$430,00</span>
-                    <br>
-                    <a href="#" class="btn">Añadir al carrito</a>
                 </div>
 
             </div>
 
-            <div class="contenedor-btn">
-                <a href="./cliente/menu.html" class="btn">Ver el menú completo</a>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <!-- termina la seccion home -->
+
+
+    <!-- inicia la seccion de platillos populares -->
+    <section class="dishes" id="dishes">
+
+        <h3 class="sub-heading"> Nuestros platos </h3>
+        <h1 class="heading"> Platos populares </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/hamburguesasuper__250px.jpg' %}"
+                     alt="Foto de una Super Hamburquesa de Pixabay">
+                <h3>Super Hamburguesa</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <span>$660,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/macarrones_250px.jpg' %}" alt="Foto de macarrones de Pixabay">
+                <h3>Macarrones</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <span>$580,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/curry_250px.jpg' %}" alt="Foto de un plato de curry de Pixabay">
+                <h3>Curry</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <span>$720,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/pizzaHawaiana_250px.jpg' %}"
+                     alt="Foto de una pizza Hawaiana hecha por la IA Bing">
+                <h3>Pizza Hawaiana</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <span>$520,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/hamburguesaPapitas__250px.jpg' %}"
+                     alt="Foto de una hamburguesa con papita de Pixabay">
+                <h3>Hamburguesa con papitas</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <span>$590,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/espaguetiNapolitano__250px.jpg' %}"
+                     alt="Foto de un espagueti napolitano">
+                <h3>Espagueti Napolitano</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <span>$500,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/pinnaColadaAlcohol_250px.jpg' %}"
+                     alt="Foto de una pinna colada de Pixabay">
+                <h3>Piña Colada</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <span>$400,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="{% static 'img/productos/pizzaCebolla_250px.jpg' %}"
+                     alt="Foto de una pizza de cebolla de Pixabay">
+                <h3>Pizza de Cebolla</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <span>$430,00</span>
+                <br>
+                <a href="#" class="btn">Añadir al carrito</a>
             </div>
 
-        </section>
-        <!-- termina la seccion de platillos populares -->
+        </div>
+
+        <div class="contenedor-btn">
+            <a href="./cliente/menu.html" class="btn">Ver el menú completo</a>
+        </div>
+
+    </section>
+    <!-- termina la seccion de platillos populares -->
 
 
-        <!-- inicio de la seccion de informacion -->
-        <section class="about" id="about">
+    <!-- inicio de la seccion de informacion -->
+    <section class="about" id="about">
 
-            <h3 class="sub-heading"> ¿Quiénes somos? </h3>
-            <h1 class="heading">  ¿Por qué elegirnos? </h1>
+        <h3 class="sub-heading"> ¿Quiénes somos? </h3>
+        <h1 class="heading"> ¿Por qué elegirnos? </h1>
 
-            <div class="row">
-                <div class="image">
-                    <img src="{% static 'img/about/chefsEnCocina__ai-generated-8520992_1280__Pixabay_300px.jpg' %}" alt="">
-                </div>
-
-                <div class="content">
-                    <h3>La mejor comida en el país</h3>
-                    <p>SaborMelody es el destino perfecto para los amantes de la cocina exótica y auténtica. Con una fusión de sabores únicos y una presentación impecable, cada plato es una experiencia sensorial inolvidable. Nuestro compromiso con ingredientes frescos y técnicas culinarias innovadoras garantiza una experiencia gastronómica excepcional que deleitará a los paladares más exigentes. ¡Descubre el encanto de SaborMelody y déjate llevar por una sinfonía de sabores inigualable!</p>
-                    <div class="icons-container">
-                        <div class="icons">
-                            <i class="fas fa-shipping-fast"></i>
-                            <span>Domicilio libre de costo</span>
-                        </div>
-                        <div class="icons">
-                            <i class="fas fa-dollar-sign"></i>
-                            <span>Facilidades de pagos</span>
-                        </div>
-                        <div class="icons">
-                            <i class="fas fa-headset"></i>
-                            <span>Servicio 24/7</span>
-                        </div>
-                    </div>
-                    <a href="./html/cliente/about.html" class="btn">Leer más</a>
-                </div>
+        <div class="row">
+            <div class="image">
+                <img src="{% static 'img/about/chefsEnCocina__ai-generated-8520992_1280__Pixabay_300px.jpg' %}" alt="">
             </div>
 
-        </section>
-        <!-- fin de la seccion de informacion -->
-
-
-        <!-- inicio de la seccion de opiniones -->
-         <section class="opinion" id="opinion">
-
-            <h3 class="sub-heading"> Opiniones de clientes </h3>
-            <h1 class="heading">  ¿Qué dicen? </h1>
-
-            <div class="swiper-container opinion-slider">
-
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide slide">
-                        <i class="fas fa-quote-right"></i>
-                        <div class="user">
-                            <img src="{% static 'img/usuario/user1__hair-5273705_1280__500px.jpg' %}" alt="Foto de una mujer de Pixabay">
-                            <div class="user-info">
-                                <h3>Luisa Pérez</h3>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Me encantó el ambiente y la atención de este lugar. La comida estaba deliciosa, especialmente el pollo a la plancha con salsa de mango. El precio me pareció razonable para la calidad y la cantidad. Lo recomiendo 100%.</p>
+            <div class="content">
+                <h3>La mejor comida en el país</h3>
+                <p>SaborMelody es el destino perfecto para los amantes de la cocina exótica y auténtica. Con una fusión
+                    de sabores únicos y una presentación impecable, cada plato es una experiencia sensorial inolvidable.
+                    Nuestro compromiso con ingredientes frescos y técnicas culinarias innovadoras garantiza una
+                    experiencia gastronómica excepcional que deleitará a los paladares más exigentes. ¡Descubre el
+                    encanto de SaborMelody y déjate llevar por una sinfonía de sabores inigualable!</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Domicilio libre de costo</span>
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <i class="fas fa-quote-right"></i>
-                        <div class="user">
-                            <img src="{% static 'img/usuario/user2__businessman-5791566_1280__500px.jpg' %}" alt="Foto de un hombre de Pixabay">
-                            <div class="user-info">
-                                <h3>Carlos Rodríguez</h3>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Fui a SaborMelody con mi familia y nos encantó. La comida estaba deliciosa, y el precio se hizo notar en la calidad. Pretendo regresar cada vez que pueda para festejar las fechas significaiva de mi familia junto al colectivo de este restaurante.</p>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Facilidades de pagos</span>
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <i class="fas fa-quote-right"></i>
-                        <div class="user">
-                            <img src="{% static 'img/usuario/user3__people-2588594_1280__500px.jpg' %}" alt="Foto de una mujer de Pixabay">
-                            <div class="user-info">
-                                <h3>Ana García</h3>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Un restaurante muy acogedor y con buena música. La carta es variada y tiene opciones para todos los gustos. Yo pedí una pizza de jamón y queso y estaba muy buena. El servicio fue rápido y amable. Volveré pronto.</p>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>Servicio 24/7</span>
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <i class="fas fa-quote-right"></i>
-                        <div class="user">
-                            <img src="{% static 'img/usuario/user0__istockphoto-1473711199-1024x1024__500px.jpg' %}" alt="Foto de una mujer de Pixabay">
-                            <div class="user-info">
-                                <h3>Pedro Martínez</h3>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Me encantó el restaurante SaborMelody. El ambiente era acogedor y tranquilo, la atención fue excelente y la comida estaba deliciosa. Probé el plato del día, que era una ensalada de frutas tropicales con queso y miel, y me sorprendió lo fresco y sabroso que estaba.</p>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <i class="fas fa-quote-right"></i>
-                        <div class="user">
-                            <img src="{% static 'img/usuario/user4__500px.jpg' %}" alt="">
-                            <div class="user-info">
-                                <h3>María Fernández</h3>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p>¡SaborMelody es mi restaurante favorito en la ciudad! Siempre disfruto de sus deliciosos platillos y el ambiente acogedor. ¡Recomendado 100%!</p>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <i class="fas fa-quote-right"></i>
-                        <div class="user">
-                            <img src="{% static 'img/usuario/user5__500px.jpg' %}" alt="">
-                            <div class="user-info">
-                                <h3>Javier López</h3>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Describiría este restaurante como el lugar perfecto para disfrutar de una cena especial o simplemente para relajarse y disfrutar de buena comida. Siempre me sorprenden con su creatividad en los platos y la frescura de los ingredientes. ¡Definitivamente uno de los mejores restaurantes de la ciudad!</p>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <i class="fas fa-quote-right"></i>
-                        <div class="user">
-                            <img src="{% static 'img/usuario/user6__500px.jpg' %}" alt="">
-                            <div class="user-info">
-                                <h3>Laura Ortíz</h3>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Encuentro a SaborMelody como un lugar ideal para disfrutar de una comida delisiosa en un ambiente relajado. Siempre me siento bien atendida y la variedad de opciones en su menú me hace querer probar algo nuevo cada visita. ¡Altamente recomendado!</p>
-                    </div>
-
                 </div>
-
+                <a href="./html/cliente/about.html" class="btn">Leer más</a>
             </div>
+        </div>
 
-         </section>
-        <!-- fin de la seccion de opiniones -->
+    </section>
+    <!-- fin de la seccion de informacion -->
 
 
-        <!-- inicio de la seccion del contacto -->
-        <div class="contacto-box">
+    <!-- inicio de la seccion de opiniones -->
+    <section class="opinion" id="opinion">
 
-            <h1>¿Cómo puedes llegar hasta nosotros?</h1>
+        <h3 class="sub-heading"> Opiniones de clientes </h3>
+        <h1 class="heading"> ¿Qué dicen? </h1>
 
-            <div class="container-form">
+        <div class="swiper-container opinion-slider">
 
-                <div class="mapa">
-                    <h3>Ven a nuestro local</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9819493578434!2d-82.47056962984671!3d22.987691242350227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd6f3549194015%3A0x3317d4fb67f5722!2sDocente%204%20Camilo%20Cienfuegos%20(Facultad%20de%20Ciencias%20y%20Tecnolog%C3%ADas%20Computacionales)!5e0!3m2!1ses-419!2scu!4v1708804384894!5m2!1ses-419!2scu">
-                        <!-- este es el mapa -->
-                    </iframe>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'img/usuario/user1__hair-5273705_1280__500px.jpg' %}"
+                             alt="Foto de una mujer de Pixabay">
+                        <div class="user-info">
+                            <h3>Luisa Pérez</h3>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Me encantó el ambiente y la atención de este lugar. La comida estaba deliciosa, especialmente el
+                        pollo a la plancha con salsa de mango. El precio me pareció razonable para la calidad y la
+                        cantidad. Lo recomiendo 100%.</p>
                 </div>
 
-                <!--
-                <form action="" autocomplete="off" onsubmit="return validarFormulario()">
-                    <h3>Dejanos saber tu opinión</h3>
-                    <input type="text" name="nombre" placeholder="Nombre o sedónimo" class="campo">
-                    <input type="email" name="correo" placeholder="Correo electrónico" class="campo">
-                    <textarea name="mensaje" placeholder="Agredeceríamos tus palabras"></textarea>
-                    <input type="submit" value="Enviar mensaje" name="eniar" class="btn-enviar btn">
-                </form>
-                -->
-                <!--
-                    Nota del backend:
-                    El formulario HTML de arriba fue reemplazado por el equivalente en Django
-                -->
-                <form action="" method="POST" autocomplete="off" onsubmit="return validarFormulario()">
-                    <h3>Dejanos saber tu opinión</h3>
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <input type="submit" value="Enviar mensaje" name="eniar" class="btn-enviar btn">
-                    <p>{{ msg }}</p>
-                </form>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'img/usuario/user2__businessman-5791566_1280__500px.jpg' %}"
+                             alt="Foto de un hombre de Pixabay">
+                        <div class="user-info">
+                            <h3>Carlos Rodríguez</h3>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Fui a SaborMelody con mi familia y nos encantó. La comida estaba deliciosa, y el precio se hizo
+                        notar en la calidad. Pretendo regresar cada vez que pueda para festejar las fechas significaiva
+                        de mi familia junto al colectivo de este restaurante.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'img/usuario/user3__people-2588594_1280__500px.jpg' %}"
+                             alt="Foto de una mujer de Pixabay">
+                        <div class="user-info">
+                            <h3>Ana García</h3>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Un restaurante muy acogedor y con buena música. La carta es variada y tiene opciones para todos
+                        los gustos. Yo pedí una pizza de jamón y queso y estaba muy buena. El servicio fue rápido y
+                        amable. Volveré pronto.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'img/usuario/user0__istockphoto-1473711199-1024x1024__500px.jpg' %}"
+                             alt="Foto de una mujer de Pixabay">
+                        <div class="user-info">
+                            <h3>Pedro Martínez</h3>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Me encantó el restaurante SaborMelody. El ambiente era acogedor y tranquilo, la atención fue
+                        excelente y la comida estaba deliciosa. Probé el plato del día, que era una ensalada de frutas
+                        tropicales con queso y miel, y me sorprendió lo fresco y sabroso que estaba.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'img/usuario/user4__500px.jpg' %}" alt="">
+                        <div class="user-info">
+                            <h3>María Fernández</h3>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>¡SaborMelody es mi restaurante favorito en la ciudad! Siempre disfruto de sus deliciosos
+                        platillos y el ambiente acogedor. ¡Recomendado 100%!</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'img/usuario/user5__500px.jpg' %}" alt="">
+                        <div class="user-info">
+                            <h3>Javier López</h3>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Describiría este restaurante como el lugar perfecto para disfrutar de una cena especial o
+                        simplemente para relajarse y disfrutar de buena comida. Siempre me sorprenden con su creatividad
+                        en los platos y la frescura de los ingredientes. ¡Definitivamente uno de los mejores
+                        restaurantes de la ciudad!</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="{% static 'img/usuario/user6__500px.jpg' %}" alt="">
+                        <div class="user-info">
+                            <h3>Laura Ortíz</h3>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Encuentro a SaborMelody como un lugar ideal para disfrutar de una comida delisiosa en un ambiente
+                        relajado. Siempre me siento bien atendida y la variedad de opciones en su menú me hace querer
+                        probar algo nuevo cada visita. ¡Altamente recomendado!</p>
+                </div>
 
             </div>
 
         </div>
-        <!-- fin de la seccion del contacto -->
+
+    </section>
+    <!-- fin de la seccion de opiniones -->
+
+
+    <!-- inicio de la seccion del contacto -->
+    <div class="contacto-box">
+
+        <h1>¿Cómo puedes llegar hasta nosotros?</h1>
+
+        <div class="container-form">
+
+            <div class="mapa">
+                <h3>Ven a nuestro local</h3>
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9819493578434!2d-82.47056962984671!3d22.987691242350227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd6f3549194015%3A0x3317d4fb67f5722!2sDocente%204%20Camilo%20Cienfuegos%20(Facultad%20de%20Ciencias%20y%20Tecnolog%C3%ADas%20Computacionales)!5e0!3m2!1ses-419!2scu!4v1708804384894!5m2!1ses-419!2scu">
+                    <!-- este es el mapa -->
+                </iframe>
+            </div>
+
+            <!--
+            <form action="" autocomplete="off" onsubmit="return validarFormulario()">
+                <h3>Dejanos saber tu opinión</h3>
+                <input type="text" name="nombre" placeholder="Nombre o sedónimo" class="campo">
+                <input type="email" name="correo" placeholder="Correo electrónico" class="campo">
+                <textarea name="mensaje" placeholder="Agredeceríamos tus palabras"></textarea>
+                <input type="submit" value="Enviar mensaje" name="eniar" class="btn-enviar btn">
+            </form>
+            -->
+            <!--
+                Nota del backend:
+                El formulario HTML de arriba fue reemplazado por el equivalente en Django
+            -->
+            <form action="" method="POST" autocomplete="off">
+                <h3>Dejanos saber tu opinión</h3>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Enviar mensaje" name="eniar" class="btn-enviar btn">
+            </form>
+
+        </div>
+
+    </div>
+    <!-- fin de la seccion del contacto -->
+
+    {% if messages %}
+        <script type="text/javascript">
+            alert('No se pudo enviar su opinión:\n{{ messages }}')
+        </script>
+    {% endif %}
 {% endblock %}

@@ -20,6 +20,6 @@ from home.views import home, new_guest
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', new_guest),
-    path('home/', home),
+    path('', new_guest, name='new_guest'),
+    path('home/', home, name='home'),
 ]
