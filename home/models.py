@@ -2,7 +2,8 @@ from django.db import models
 
 
 # Create your models here.
-class Opinion(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.CharField(max_length=100)
-    submission = models.TextField()
+class Comentario(models.Model):
+    id_comentario = models.IntegerField(primary_key=True)
+    nombre_usuario = models.CharField(max_length=100)
+    correo_usuario = models.CharField(max_length=100)
+    comentario_usuario = models.TextField()

@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from home.views import home, new_guest
 from login_or_register.views import login_or_register
+from menu.views import menu
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', new_guest, name='new_guest'),
     path('home/', home, name='home'),
-    path('login_or_register/', login_or_register, name='login_or_register')
+    path('login_or_register/', login_or_register, name='login_or_register'),
+    path('cliente/menu/', menu, name='menu')
 ]

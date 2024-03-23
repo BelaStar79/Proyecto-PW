@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 
 from .forms import CustomerOpinionForm
-from .models import Opinion
+from .models import Comentario
 
 from re import match
 
@@ -26,7 +26,7 @@ def home(request):
 
         else:
             # guardar los datos en la BD
-            Opinion.objects.create(name=username, email=email, submission=submit)
+            Comentario.objects.create(name=username, email=email, submission=submit)
     return render(request, 'index.html', {
         'form': CustomerOpinionForm(),
         'messages': messages,

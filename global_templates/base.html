@@ -32,11 +32,11 @@ recurrentes en todas las páginas. Las restantes plantillas solamente deben incl
             <a href="#" class="logo"><i class="fas fa-utensils"></i>  SaborMelody</a>
 
             <nav class="navbar">
-                <a class="" href="#home">Inicio</a>
-                <a href="#dishes">Platillos Estrella</a>
-                <a href="./html/cliente/menu.html">Menú</a>
-                <a href="#about">¿Quiénes somos?</a>
-                <a href="#opinion">Opiniones</a>
+                <a class="" href="{% url 'home' %}">Inicio</a>
+                <a href="{% url 'home' %}#dishes">Platillos Estrella</a>
+                <a href="{% url 'menu' %}">Menú</a>
+                <a href="{% url 'home' %}#about">¿Quiénes somos?</a>
+                <a href="{% url 'home' %}#opinion">Opiniones</a>
                 <a href="{% url 'login_or_register' %}" class="btn-open-popup">Inicia sección</a>
             </nav>
 

@@ -1,58 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>HazTuPedido</title>
+{% extends 'base.html' %}
+{% load static %}
 
-        <!-- links externos -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-        <!-- links locales -->
-        <link rel="stylesheet" href="../../css/styleIndex.css">
-        <link rel="stylesheet" href="../../css/styleMenu.css">
-    </head>
-
-    <body><!-- cuerpo de la pagina -->
-
-        <!-- inicio de cabecera -->
-        <header>
-
-            <a href="#" class="logo"><i class="fas fa-utensils"></i>  SaborMelody</a>
-
-            <nav class="navbar">
-                <a href="../../../../index.html#home">Inicio</a>
-                <a href="../../../../index.html#dishes">Platillos Estrella</a>
-                <a class="active" href="#menu">Menú</a>
-                <a href="../../../../index.html#about">¿Quiénes somos?</a>
-                <a href="../../../../index.html#opinion">Opiniones</a>
-                <a href="../login_and_register.html">Inicia sección</a>
-            </nav>
-
-            <div class="icons">
-                <i class="fas fa-bars" id="menu-bars"></i>
-                <i class="fas fa-search" id="search-icon"></i>
-                <a href="" class="fas fa-heart"></a>
-                <a href="" class="fas fa-shopping-cart"></a>
-            </div>
-
-        </header>
-        <!-- fin de cabecera -->
-
-
-        <!-- fomulario de la barra de busqueda -->
-        <form action="" id="search-form">
-
-            <input type="search" placeholder="search here..." name="" id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-            <i class="fas fa-times" id="close"></i>
-
-        </form>
-
-
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
         <!-- inicio del menu -->
         <section class="menu" id="menu">
 
@@ -63,7 +16,7 @@
 
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/arrozConPollo_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/arrozConPollo_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -82,7 +35,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/arrozFrito_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/arrozFrito_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -101,7 +54,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/grochetasCarne__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/grochetasCarne__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -120,7 +73,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/hamburquesa_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/hamburquesa_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -139,7 +92,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/grochetas_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/grochetas_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -158,7 +111,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/hamburguesaDobleQueso__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/hamburguesaDobleQueso__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -177,7 +130,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/hamburguesaPapitas__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/hamburguesaPapitas__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -196,7 +149,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/espaguetiAlbondigas__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/espaguetiAlbondigas__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -215,7 +168,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/hamburguesasuper__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/hamburguesasuper__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -234,7 +187,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/batidoHelado_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/batidoHelado_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -253,7 +206,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/jugoGuayaba__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/jugoGuayaba__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -272,7 +225,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/jugoMango__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/jugoMango__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -291,7 +244,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/jugoMelon__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/jugoMelon__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -310,7 +263,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/jugoPlatanito__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/jugoPlatanito__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -329,7 +282,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/jugoUva__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/jugoUva__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -348,7 +301,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/macarrones_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/macarrones_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -367,7 +320,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/ensaladaFria__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/ensaladaFria__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -386,7 +339,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/espaguetiCarne__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/espaguetiCarne__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -405,7 +358,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pizzaCebolla_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pizzaCebolla_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -424,7 +377,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pizzaHawaiana_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pizzaHawaiana_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -443,7 +396,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/espaguetiNapolitano__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/espaguetiNapolitano__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -462,7 +415,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/espaguetiSalchicha__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/espaguetiSalchicha__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -481,7 +434,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/macarronesQueso__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/macarronesQueso__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -500,7 +453,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/macarronoesSalchicha__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/macarronoesSalchicha__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -519,7 +472,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pastichio__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pastichio__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -538,7 +491,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pizzapicante_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pizzapicante_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -557,7 +510,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pizzaNapolitana__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pizzaNapolitana__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -576,7 +529,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pizzaSalchicha__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pizzaSalchicha__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -595,7 +548,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/polloAsado__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/polloAsado__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -614,7 +567,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/polloFrito__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/polloFrito__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -633,7 +586,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/sandwichRobusto__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/sandwichRobusto__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -652,7 +605,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/sandwishNormal__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/sandwishNormal__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -671,7 +624,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/curry_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/curry_250px.jpg' %}" alt="">
                             <a href="#" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -690,7 +643,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/salmon_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/salmon_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -709,7 +662,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/tofu_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/tofu_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -728,7 +681,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pinnaColada__250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pinnaColada__250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -747,7 +700,7 @@
     
                     <div class="box">
                         <div class="image">
-                            <img src="../../img/productos/pinnaColadaAlcohol_250px.jpg" alt="">
+                            <img src="{% static 'img/productos/pinnaColadaAlcohol_250px.jpg' %}" alt="">
                             <a href="" class="fas fa-heart"></a>
                         </div>
                         <div class="content">
@@ -770,34 +723,4 @@
 
         </section>
         <!-- fin de la seccion del menu -->
-
-
-        <!-- inicio de la seccion de login -->
-        <!-- fin de la seccion de login -->
-
-
-        <!-- scripts externos -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- scripts locales -->
-        <script src="../../js/scriptIndex.js"></script>
-
-    </body>
-
-    <footer> <!-- pie de la pagina -->
-
-        <section class="footer">
-
-            <div class="box-container">
-
-                <div class="credit">
-                    copyright &#169 2024 by Eliane Alvarez, Elizabeth Rodríguez y Luis E. Castillo
-                </div>
-
-            </div>
-
-        </section>
-
-    </footer>
-
-</html>
+{% endblock %}
