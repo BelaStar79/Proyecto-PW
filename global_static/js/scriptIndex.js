@@ -91,8 +91,7 @@ var swiper = new Swiper(".opinion-slider", {
 // fin de la configuracion del carrusel de opiniones
 
 
-// inicio de la validacion del formulario de contacto
-// NOTA DEL BACKEND: Esta validación también se realiza en el backend
+// inicio de la validacion del formulario de contacto 
 function validarFormulario() {
 
   var nombre = document.getElementsByName('nombre')[0].value;
@@ -101,19 +100,19 @@ function validarFormulario() {
 
   if (nombre === '' || correo === '' || mensaje === '') {
       alert('Por favor, completa todos los campos.');
-      return false;
+      return false; 
   }
 
   var correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!correoRegex.test(correo)) {
       alert('Por favor, ingresa un correo electrónico válido.');
-      return false;
+      return false; 
   }
 
   return true;
 }
-// fin de la validacion del formulario de contacto
+// fin de la validacion del formulario de contacto 
 
 
 
