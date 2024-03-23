@@ -442,10 +442,10 @@
                 Nota del backend:
                 El formulario HTML de arriba fue reemplazado por el equivalente en Django
             -->
-            <form action="" method="POST" autocomplete="off">
+            <form action="" method="POST" autocomplete="off" onsubmit="return validarFormulario()">
                 <h3>Dejanos saber tu opinión</h3>
                 {% csrf_token %}
-                {{ form.as_p }}
+                {{ form }}
                 <input type="submit" value="Enviar mensaje" name="eniar" class="btn-enviar btn">
             </form>
 
