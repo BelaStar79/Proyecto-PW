@@ -97,6 +97,7 @@ function validarFormularioRegister() {
     var correo = document.getElementsByName('correo')[0].value;
     var usuario = document.getElementsByName('usuario')[0].value;
     var contrasena = document.getElementsByName('contrasena')[0].value;
+    var ci = document.getElementsByName('ci')[0].value;
 
     if (nombre === '' || correo === '' || usuario === '' || contrasena === '') {
         alert('Por favor, completa todos los campos.');
@@ -114,6 +115,14 @@ function validarFormularioRegister() {
         alert('La contraseña debe tener al menos 8 caracteres.');
         return false;
     }
+
+    if (ci.length < 11) {
+        alert('El no. de carnet no es correcto.');
+        return false;
+    } else if (ci.length > 11) {
+        alert('El no. de carnet no es correcto.');
+        return false;
+    } 
 
     return true;
 }
