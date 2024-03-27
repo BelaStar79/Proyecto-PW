@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Administración Menú</title>
+
+        <!-- enlaces locales -->
+        <link rel="stylesheet" href="../../css/styleDashboard.css">
+    </head>
+
+
+    <body> <!-- inicio del cuerpo de la pagina -->
+
+        <!-- inicio del lateral izquierdo -->
+        <aside>
+            <div class="logo">
+                <img src="../../img/logo_blanco_500px.png" alt="Logo de SaborMelody">
+            </div>
+
+            <hr> <!-- linea separadora -->
+
+            <div class="menu-navegacion">
+                <ul>
+                    <li><img src="../../img/iconos/menu_blanco_100px.png" alt="menu"><p>Menú</p></li>
+                    <li><img src="../../img/iconos/pedidos_blanco_100px.png" alt="pedidos"><p>Pedidos</p></li>
+                    <li><img src="../../img/iconos/factura_blanco_100px.png" alt="factura"><p>Facturas</p></li>
+                    <li><img src="../../img/iconos/ajustes_blanco_100px.png" alt="ajustes"><p>Ajustes</p></li>
+                </ul>
+
+                <div class="user-box">
+                    <a href=""><img src="../../img/usuario/user4__500px.jpg" alt="Foto de perfil">@dependienta</a>
+                </div>
+            </div>
+        </aside>
+        <!-- fin del lateral izquierdo -->
+
+
+        <!-- inicio del lateral derecho -->
+        <section>
+            <div class="banner">
+                <h1>Menús</h1>
+            </div>
+
+            <a href="" class="btn" id="add"><img src="../../img/iconos/add_naranja_100px.png" alt="+"> Añadir menú</a>
+
+            <div class="list-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nombre del menú</th>
+                            <th>Activo</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Menú común</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td>
+                                <a href=""><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a>
+                            </td>
+                            <td>
+                                <a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a>
+                            </td>
+                            <td>
+                                <a href=""><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Menú de Navidad</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td>
+                                <img src="../../img/iconos/ver_gris_100px.PNG" alt="view">
+                            </td>
+                            <td>
+                                <img src="../../img/iconos/editar_gris_100px.png" alt="edit">
+                            </td>
+                            <td>
+                                <img src="../../img/iconos/delete_gris_100px.png" alt="delete">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footer">
+                <hr> <!-- linea separadora -->
+
+                <ul>
+                    <li>Fecha: </li>
+                    <li>Hora: </li>
+                    <li>Activo: </li>
+                    <li><a href=""><img src="../../img/iconos/salir_naranja__100px copia.png" alt="exit"> Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- fin del lateral derecho -->
+
+    </body>
+</html>

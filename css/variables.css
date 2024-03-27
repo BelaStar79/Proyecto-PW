@@ -9,6 +9,7 @@
     --light-color: #666;
     --azulado: #192a56;
     --naranjaDegradado: rgba(255, 102, 0, 0.6);
+    --grisOscuro: #333;
 
 
     /*   O T R O S   */
@@ -17,3 +18,4 @@
     --fondo: url(../img/hotel-1191725_1280.jpg);
     
 }
+

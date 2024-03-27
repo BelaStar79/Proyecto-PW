@@ -77,6 +77,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
     z-index: 1000;
     box-shadow: var(--box-shadow);
 }
@@ -320,7 +321,7 @@ section .contenedor-btn {
 }
 
 
-/* estilos dela seccion about */
+/* estilos de la seccion about */
 .about .row {
     display: flex;
     flex-wrap: wrap;
@@ -598,6 +599,7 @@ footer {
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
     gap: 1.5rem;
 }
 
