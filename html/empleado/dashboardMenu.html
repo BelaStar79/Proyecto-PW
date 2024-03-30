@@ -44,7 +44,7 @@
                 <h1>Menús</h1>
             </div>
 
-            <a href="" class="btn" id="add"><img src="../../img/iconos/add_naranja_100px.png" alt="+"> Añadir menú</a>
+            <a href="#addmenu" class="btn" id="add"><img src="../../img/iconos/add_naranja_100px.png" alt="+"> Añadir menú</a>
 
             <div class="list-container">
                 <table>
@@ -68,15 +68,9 @@
                                     <input class="checkbox" type="checkbox" name="active" id="active">
                                 </div>
                             </td>
-                            <td>
-                                <a href=""><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a>
-                            </td>
-                            <td>
-                                <a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a>
-                            </td>
-                            <td>
-                                <a href=""><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a>
-                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
                         </tr>
 
                         <tr>
@@ -87,15 +81,9 @@
                                     <input class="checkbox" type="checkbox" name="active" id="active">
                                 </div>
                             </td>
-                            <td>
-                                <img src="../../img/iconos/ver_gris_100px.PNG" alt="view">
-                            </td>
-                            <td>
-                                <img src="../../img/iconos/editar_gris_100px.png" alt="edit">
-                            </td>
-                            <td>
-                                <img src="../../img/iconos/delete_gris_100px.png" alt="delete">
-                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -108,10 +96,196 @@
                     <li>Fecha: </li>
                     <li>Hora: </li>
                     <li>Activo: </li>
-                    <li><a href=""><img src="../../img/iconos/salir_naranja__100px copia.png" alt="exit"> Cerrar sesión</a></li>
+                    <li><a href="../../index.html"><img src="../../img/iconos/salir_naranja__100px copia.png" alt="exit"> Cerrar sesión</a></li>
                 </ul>
             </div>
         </section>
+
+
+        <!-- inicio del add menu -->
+        <div class="container-popup" id="addmenu">
+            <div class="popup">
+                <h1>Crear Menú</h1>
+
+                <form action="">
+                    <input type="text" name="nombre" placeholder="Nombre del menú" onblur="this.placeholder='Nombre del menú'" onfocus="this.placeholder=''">
+                    <input type="text" name="producto" placeholder="Producto" onblur="this.placeholder='Producto'" onfocus="this.placeholder=''">
+                    <input type="text" name="precio" placeholder="Precio" onblur="this.placeholder='Precio'" onfocus="this.placeholder=''">
+
+                    <button>Añadir</button>
+                </form>
+
+                <div class="list-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Tofu</td>
+                                <td>200.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Arroz con pollo</td>
+                                <td>150.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="footer-popup">
+                    <a href="#" class="btn">Guardar</a>
+                    <a href="#" class="btn close">Cancelar</a>
+                </div>
+            </div>
+        </div>
+        <!-- fin del add menu -->
+
+
+        <!-- inicio del view menu -->
+        <div class="container-popup" id="viewmenu">
+            <div class="popup">
+                <h1>Visualizando Menú</h1>
+
+                <div class="list-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Tofu</td>
+                                <td>200.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Arroz con pollo</td>
+                                <td>150.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="footer-popup">
+                    <a href="#" class="btn">Cerrar</a>
+                </div>
+            </div>
+        </div>
+        <!-- fin del view menu -->
+
+
+        <!-- inicio del editar menu -->
+        <div class="container-popup" id="editmenu">
+            <div class="popup">
+                <h1>Editar Menú</h1>
+
+                <form action="">
+                    <input type="text" name="nombre" placeholder="Nombre del menú" onblur="this.placeholder='Nombre del menú'" onfocus="this.placeholder=''">
+                    <input type="text" name="producto" placeholder="Producto" onblur="this.placeholder='Producto'" onfocus="this.placeholder=''">
+                    <input type="text" name="precio" placeholder="Precio" onblur="this.placeholder='Precio'" onfocus="this.placeholder=''">
+
+                    <button>Añadir</button>
+                </form>
+
+                <div class="list-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Tofu</td>
+                                <td>200.00</td>
+                                <td><a href="#deleteproducto_e"><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_e"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Arroz con pollo</td>
+                                <td>150.00</td>
+                                <td><a href="#deleteproducto_e"><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_e"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="footer-popup">
+                    <a href="#" class="btn">Guardar</a>
+                    <a href="#" class="btn close">Cancelar</a>
+                </div>
+            </div>
+        </div>
+        <!-- fin del editar menu -->
+
+
+        <!-- inicio del eliminar menu -->
+        <div class="container-popup" id="deletemenu">
+            <div class="popup">
+                <h1>Eliminar Menú</h1>
+
+                <p>¿Está seguro de eliminar este menú completo?</p>
+
+                <div class="footer-popup">
+                    <a href="#" class="btn">Eliminar</a>
+                    <a href="#" class="btn close">Cancelar</a>
+                </div>
+            </div>
+        </div>
+        <!-- fin del eliminar menu -->
+
+
+        <!-- inicio del eliminar producto relacionado con crear menu -->
+        <div class="container-popup" id="deleteproducto_c">
+            <div class="popup">
+                <h1>Eliminar Menú</h1>
+
+                <p>¿Está seguro de eliminar este producto?</p>
+
+                <div class="footer-popup">
+                    <a href="#addmenu" class="btn">Eliminar</a>
+                    <a href="#addmenu" class="btn close">Cancelar</a>
+                </div>
+            </div>
+        </div>
+        <!-- fin del eliminar producto relacionado con crear menu -->
+
+
+        <!-- inicio del eliminar producto relacionado con editar menu -->
+        <div class="container-popup" id="deleteproducto_e">
+            <div class="popup">
+                <h1>Eliminar Menú</h1>
+
+                <p>¿Está seguro de eliminar este producto?</p>
+
+                <div class="footer-popup">
+                    <a href="#editmenu" class="btn">Eliminar</a>
+                    <a href="#editmenu" class="btn close">Cancelar</a>
+                </div>
+            </div>
+        </div>
+        <!-- fin del eliminar producto relacionado con editar menu -->
+
         <!-- fin del lateral derecho -->
 
     </body>

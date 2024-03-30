@@ -16,7 +16,7 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 
-   section.forEach(sec =>{  //no funciona 
+   section.forEach(sec =>{   
     let top = window.scrollY;
     let height = sec.offsetHeight;
     let offset = sec.offsetTop - 150;
@@ -25,11 +25,9 @@ window.onscroll = () =>{
     if (top >= offset && top < offset + height){
       navLinks.forEach(links =>{
         links.classList.remove('active');
-        //alert(id)
         document.querySelector(`header .navbar a[href="#${id}"]`).classList.add('active');
       });
     };
-    //href*=++]
   });
 
 }
@@ -37,7 +35,7 @@ window.onscroll = () =>{
 
 
 // inicio de la configuracion del boton de busqueda
-document.querySelector('#search-icon').onclick = () =>{     // no funciona
+document.querySelector('#search-icon').onclick = () =>{     
     document.querySelector('#search-form').classList.toggle('active');
 }
 

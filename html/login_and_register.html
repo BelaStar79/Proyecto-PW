@@ -44,8 +44,8 @@
                             <a href="../index.html"><img src="../img/logo__500px.png" alt=""></a>
                         </div>
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electrónico" required>
-                        <input type="password" placeholder="Contraseña" required>
+                        <input type="text" placeholder="Correo Electrónico" required onblur="this.placeholder='Correo Electrónico'" onfocus="this.placeholder=''">
+                        <input type="password" placeholder="Contraseña" required onblur="this.placeholder='Contraseña'" onfocus="this.placeholder=''">
 
                         <div class="checkbox-box"> <!-- checkbox -->
                             <input class="checkbox" type="checkbox" name="empleado" id="empleado">
@@ -61,11 +61,11 @@
                             <a href="../Index.html" class="superior"><img src="../img/logo__500px.png" alt=""></a>
                         </div>
                         <h2 class="inferior">Crear cuenta</h2>
-                        <input type="text" placeholder="Nombre Completo" name="nombre" required>
-                        <input type="text" placeholder="No. Carnet" name="ci" required>
-                        <input type="text" placeholder="Correo Electrónico" name="correo" required>
-                        <input type="text" placeholder="Usuario" name="usuario" required>
-                        <input type="password" placeholder="Contraseña" name="contrasena" required>
+                        <input type="text" placeholder="Nombre Completo" name="nombre" required onblur="this.placeholder='Nombre completo'" onfocus="this.placeholder=''">
+                        <input type="text" placeholder="No. Carnet" name="ci" required onblur="this.placeholder='No. Carnet'" onfocus="this.placeholder=''">
+                        <input type="text" placeholder="Correo Electrónico" name="correo" required onblur="this.placeholder='Correo Electrónico'" onfocus="this.placeholder=''">
+                        <input type="text" placeholder="Usuario" name="usuario" required onblur="this.placeholder='Usuario'" onfocus="this.placeholder=''">
+                        <input type="password" placeholder="Contraseña" name="contrasena" required onblur="this.placeholder='Contraseña'" onfocus="this.placeholder=''">
                         <button class="btn inferior">Registrarse</button>
                     </form>
 
