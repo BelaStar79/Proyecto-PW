@@ -5,6 +5,7 @@
 @import url('./variables.css');
 
 
+/* inicio de los estilos generales */
 *{
     font-family: 'Protest Riot', sans-serif;
     font-size: 16px;
@@ -25,6 +26,73 @@ body{
     width: 100%;
     display: flex;
 }
+/* fin de los estilos generales */
+
+
+/* inicio de los estilos levemente comunes */
+hr{
+    margin: auto;
+    width: 90%;
+    height: 3px;
+    border: none; 
+}
+aside hr{
+    background-color: var(--white);
+}
+.footer hr{
+    background: var(--naranjaClaro);
+}
+
+section .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+.dashboard-menu section .banner{
+    background-image: var(--menus);
+}
+
+.btn{
+    text-decoration: none;
+    margin: 3rem 0;
+    display: inline-block;
+    font-size: 3rem;
+    color: var(--naranjaClaro);
+    border-radius: 5rem;
+    border: 4px solid var(--naranjaClaro);
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+.footer-popup .btn{
+    font-size: 2.5rem;
+    border: 3px solid var(--naranjaClaro);
+}
+.footer-popup .btn:hover{
+    color: var(--white);
+    background: var(--naranjaClaro);
+}
+
+.popup {
+    width: 100%;
+    max-width: 45%;
+    height: 90%;
+    position: absolute;
+    background: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, -230%);
+    transition: all 600ms;
+    padding-top: 30px;
+    text-align: center;
+}
+.delete .popup{
+    height: 40%;
+}
+/* fin de los estilos levemente comunes */
+
 
 aside{
     position: fixed;
@@ -41,14 +109,6 @@ aside .logo{
 
 aside .logo img{
     width: 70%;
-}
-
-aside hr, .footer hr{
-    margin: auto;
-    width: 90%;
-    height: 3px;
-    background-color: #fff;
-    border: none;
 }
 
 aside .menu-navegacion{
@@ -77,7 +137,7 @@ aside ul li img{
 
 aside ul li p{
     font-size: 3.5rem;
-    color: #fff;
+    color: var(--white);
     padding-left: 10px;
 }
 
@@ -103,7 +163,7 @@ aside .user-box a img{
 aside .user-box a{
     display: flex;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-size: 2rem;
     align-items: center;
 }
@@ -116,30 +176,9 @@ section{
     width: 80%;
 }
 
-section .banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 25%;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/banner_menu.jpg');
-}
-
 section .banner h1{
     font-size: 8rem;
-    color: #fff;
-}
-
-.btn{
-    text-decoration: none;
-    margin: 3rem 0;
-    display: inline-block;
-    font-size: 3rem;
-    color: var(--naranjaClaro);
-    border-radius: 5rem;
-    border: 4px solid var(--naranjaClaro);
-    cursor: pointer;
-    padding: .8rem 3rem;
+    color: var(--white);
 }
 
 section #add{
@@ -177,13 +216,11 @@ td{
 tr>:nth-child(n){
     padding-right: 10px;
 }
-
 tr>:nth-child(4),
 tr>:nth-child(5),
 tr>:nth-child(6){
     width: 1.5em;
 }
-
 tr>:nth-child(2){
     text-align: left;
 }
@@ -192,10 +229,13 @@ td .checkbox-box input {
     background: none;
 }
 
+
+  /************/
+ /* CHECKBOX */
+/************/
 input[type="checkbox"] {
     appearance: none;
 }
-
 input[type="checkbox"]::before{
     border: 1px solid var(--light-color);
     border-radius: 7px;
@@ -208,11 +248,9 @@ input[type="checkbox"]::before{
     margin: 10px;
     color: transparent;
 }
-
 input[type="checkbox"]:hover::before {
     border-color: var(--naranjaClaro);
 }
-
 input[type="checkbox"]:checked::before{
     color: var(--naranjaClaro);
     border-color: var(--naranjaClaro);
@@ -257,10 +295,6 @@ td img{
 
 }
 
-.footer hr{
-    background: var(--naranjaClaro);
-}
-
 
   /****************/
  /* POPUP STYLES */
@@ -275,7 +309,6 @@ td img{
     opacity: 0;
     transition: all 600ms;
 }
-
 .container-popup:target {
     background: rgba(0, 0, 0, 0.8);
     visibility: visible;
@@ -289,21 +322,6 @@ td img{
     visibility: visible;
 }
 
-.popup {
-    width: 100%;
-    max-width: 45%;
-    height: 90%;
-    position: absolute;
-    background: white;
-    visibility: hidden;
-    top: -80%;
-    left: -80%;
-    transform: rotate(90deg) translate(-150%, -230%);
-    transition: all 600ms;
-    padding-top: 30px;
-    text-align: center;
-}
-
 .popup h1{
     font-size: 4rem;
     margin-bottom: 20px;
@@ -315,19 +333,16 @@ td img{
     padding: 5px;
     border: none;
     border-radius: 10px;
-    background: #F2F2F2;
+    background: var(--grisClaro);
     font-size: 2rem;
     outline: none;
 }
-
 input[name='nombre']{
     width: 90%;
 }
-
 input[name='producto']{
     width: 50%;
 }
-
 input[name='precio']{
     width: 20%;
 }
@@ -336,14 +351,13 @@ button{
     width: 20%;
     font-size: 2rem;
     color: var(--naranjaClaro);
-    background: #fff;
+    background: var(--white);
     border: 2px solid var(--naranjaClaro);
     border-radius: 50px;
     cursor: pointer;
 }
-
 button:hover{
-    color: #fff;
+    color: var(--white);
     background: var(--naranjaClaro);
 }
 
@@ -358,29 +372,11 @@ button:hover{
     bottom: 1em;
 }
 
-.footer-popup .btn{
-    font-size: 2.5rem;
-    border: 3px solid var(--naranjaClaro);
-}
-
-.footer-popup .btn:hover{
-    color: #fff;
-    background: var(--naranjaClaro);
-}
-
 .close{
     margin-left: 25%;
 }
 
-#deleteproducto_e .popup,
-#deletemenu .popup,
-#deleteproducto_c .popup{
-    height: 40%;
-}
-
-#deleteproducto_e .popup p,
-#deletemenu .popup p,
-#deleteproducto_c .popup p{
+.delete p{
     margin: 30px;
     font-size: 2rem;
 }

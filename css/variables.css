@@ -4,18 +4,25 @@
     --naranjaClaro: rgb(255, 153, 51);
     --naranjaOscuro: rgb(255, 102, 0);
     --black: #000;
+    --white: #fff;
     --green: #27ae60;
     --rojo: rgb(250, 72, 72);
     --light-color: #666;
     --azulado: #192a56;
     --naranjaDegradado: rgba(255, 102, 0, 0.6);
     --grisOscuro: #333;
+    --grisClaro: #F2F2F2;
+
+
+    
+    /* Banners */
+    --menus: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/banner_menu.jpg');
 
 
     /*   O T R O S   */
     --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     --border-dos: .1rem solid rgba(0, 0, 0, .2);
     --fondo: url(../img/hotel-1191725_1280.jpg);
-    
+
 }
 
