@@ -238,6 +238,9 @@ section .list-container{
 #viewmenu table{
     max-height: 360px;
 }
+#addfactura table{
+    max-height: 220px;
+}
 table thead{
     flex: 0 0 auto;
 }
@@ -357,7 +360,24 @@ td .checkbox-box input {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+#addfactura tr>:nth-child(1){
+    width: 2em;
+}
+#addfactura tr>:nth-child(2){
+    text-align: left;
+    width: 12em;
+    padding-left: 10px;
+}
+#addfactura tr>:nth-child(3){
+    width: 5em;
+    text-align: right;
+    padding-right: 10px;
+}
+#addfactura tr>:nth-child(4){
+    width: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
   /************************************/
@@ -527,4 +547,6 @@ button:hover{
     margin-left: 30px;
     margin-right: 30px;
 }
+
+
 
