@@ -74,6 +74,9 @@ section .banner{
 .dashboard-factura .banner{
     background-image: var(--factura);
 }
+.dashboard-productos .banner{
+    background-image: var(--productos);
+}
 
 .btn{
     text-decoration: none;
@@ -109,6 +112,10 @@ section .banner{
     transition: all 600ms;
     padding-top: 30px;
     text-align: center;
+}
+.dashboard-productos .popup{
+    display: flex;
+    flex-direction: column;
 }
 .delete .popup{
     height: 40%;
@@ -239,7 +246,7 @@ section .list-container{
     max-height: 360px;
 }
 #addfactura table{
-    max-height: 220px;
+    max-height: 210px;
 }
 table thead{
     flex: 0 0 auto;
@@ -548,5 +555,51 @@ button:hover{
     margin-right: 30px;
 }
 
+.internal-section{
+    margin-top: 2%;
+    position:unset;
+    display: flex;
+    height: 5%;
+    max-width: 100%;
+    justify-content: right;
+    gap: 4%;
+    margin-left: 2%;
+}
+.internal-section .derecha{
+    min-width: 25%;
+}
+.internal-section hr{
+    background: var(--naranjaClaro);
+    width: 100%;
+}
+.internal-section .derecha p{
+    text-align: right;
+}
 
+.checkbox-box label,
+.pago p,
+.internal-section p{
+    font-size: 2.5rem;
+    color: var(--grisOscuro);
+}
+
+.pago{
+    position:unset;
+    display: flex;
+    justify-content:center;
+    align-items: baseline;
+    min-width: 100%;
+    max-height: 10%;
+    gap: 3%;
+}
+.pago p{
+    text-align: center;
+}
+.pago .checkbox-box{
+    display: flex;
+    align-items: baseline;
+}
+.pago input{
+    background: transparent;
+}
 
