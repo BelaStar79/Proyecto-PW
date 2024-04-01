@@ -17,6 +17,7 @@
     
     /* Banners */
     --menus: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/banner_menu.jpg');
+    --factura: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/banner_factura.jpg');
 
 
     /*   O T R O S   */

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Administración Menú</title>
+        <title>Administración | Menú</title>
 
         <!-- enlaces locales -->
         <link rel="stylesheet" href="../../css/styleDashboard.css">
@@ -17,17 +17,25 @@
         <!-- inicio del lateral izquierdo -->
         <aside>
             <div class="logo">
-                <img src="../../img/logo_blanco_500px.png" alt="Logo de SaborMelody">
+                <a href="../../index.html"><img src="../../img/logo_blanco_500px.png" alt="Logo de SaborMelody"></a>
             </div>
 
             <hr> <!-- linea separadora -->
 
             <div class="menu-navegacion">
                 <ul>
-                    <li><img src="../../img/iconos/menu_blanco_100px.png" alt="menu"><p>Menú</p></li>
-                    <li><img src="../../img/iconos/pedidos_blanco_100px.png" alt="pedidos"><p>Pedidos</p></li>
-                    <li><img src="../../img/iconos/factura_blanco_100px.png" alt="factura"><p>Facturas</p></li>
-                    <li><img src="../../img/iconos/ajustes_blanco_100px.png" alt="ajustes"><p>Ajustes</p></li>
+                    <li>
+                        <a href=""><img src="../../img/iconos/menu_blanco_100px.png" alt="menu"><p>Menú</p></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../../img/iconos/pedidos_blanco_100px.png" alt="pedidos"><p>Productos</p></a>
+                    </li>
+                    <li>
+                        <a href="./dashboardFactura.html"><img src="../../img/iconos/factura_blanco_100px.png" alt="factura"><p>Facturas</p></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../../img/iconos/ajustes_blanco_100px.png" alt="ajustes"><p>Ajustes</p></a>
+                    </li>
                 </ul>
 
                 <div class="user-box">
@@ -39,7 +47,7 @@
 
 
         <!-- inicio del lateral derecho -->
-        <section>
+        <section class="dashboard-menu">
             <div class="banner">
                 <h1>Menús</h1>
             </div>
@@ -76,6 +84,110 @@
                         <tr>
                             <td>2</td>
                             <td>Menú de Navidad</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Menú de Haloween</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Menú del 14 de febrero</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Menú de sabores del mundo</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Menú de sabor y luz</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>Menú de artes del sabor</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>Menú de esencia de sabores</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>Menú de misterios del paladar</td>
+                            <td>
+                                <div class="checkbox-box"> <!-- checkbox -->
+                                    <input class="checkbox" type="checkbox" name="active" id="active">
+                                </div>
+                            </td>
+                            <td><a href="#viewmenu"><img src="../../img/iconos/ver_gris_100px.PNG" alt="view"></a></td>
+                            <td><a href="#editmenu"><img src="../../img/iconos/editar_gris_100px.png" alt="edit"></a></td>
+                            <td><a href="#deletemenu"><img src="../../img/iconos/delete_gris_100px.png" alt="delete"></a></td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>Menú de especial</td>
                             <td>
                                 <div class="checkbox-box"> <!-- checkbox -->
                                     <input class="checkbox" type="checkbox" name="active" id="active">
@@ -139,6 +251,76 @@
                                 <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
                                 <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
                             </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Pizza Margherita</td>
+                                <td>30.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tacos al pastor</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Ensalada Caprese</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ceviche de pescado</td>
+                                <td>20.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Sopa de tortilla</td>
+                                <td>24.65</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Paella Valenciana</td>
+                                <td>30.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Tostadas de camarón</td>
+                                <td>30.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Ceviche de pescado</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Tacos de carne asada</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Ensalada de pollo a la plancha</td>
+                                <td>20.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -176,6 +358,52 @@
                                 <td>2</td>
                                 <td>Arroz con pollo</td>
                                 <td>150.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Tacos al pastor</td>
+                                <td>15.00</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Ensalada Caprese</td>
+                                <td>15.00</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ceviche de pescado</td>
+                                <td>20.00</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Sopa de tortilla</td>
+                                <td>24.65</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Paella Valenciana</td>
+                                <td>30.00</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Tostadas de camarón</td>
+                                <td>30.00</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Ceviche de pescado</td>
+                                <td>15.00</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Tacos de carne asada</td>
+                                <td>15.00</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Ensalada de pollo a la plancha</td>
+                                <td>20.00</td>
                             </tr>
                         </tbody>
                     </table>
@@ -225,6 +453,76 @@
                                 <td>150.00</td>
                                 <td><a href="#deleteproducto_e"><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
                                 <td><a href="#deleteproducto_e"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Pizza Margherita</td>
+                                <td>30.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tacos al pastor</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Ensalada Caprese</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ceviche de pescado</td>
+                                <td>20.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Sopa de tortilla</td>
+                                <td>24.65</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Paella Valenciana</td>
+                                <td>30.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Tostadas de camarón</td>
+                                <td>30.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Ceviche de pescado</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Tacos de carne asada</td>
+                                <td>15.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Ensalada de pollo a la plancha</td>
+                                <td>20.00</td>
+                                <td><a href=""><img src="../../img/iconos/editar_gris_100px.png" alt="editar"></a></td>
+                                <td><a href="#deleteproducto_c"><img src="../../img/iconos/delete_gris_100px.png" alt="eliminar"></a></td>
                             </tr>
                         </tbody>
                     </table>
